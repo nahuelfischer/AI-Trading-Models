@@ -203,8 +203,8 @@ All behaviour is controlled from one file. The most important ones:
 | `INITIAL_CAPITAL` | `100,000` | Starting cash (USD) |
 | `STRATEGY` | `"momentum"` | Default strategy |
 | `SIZING_METHOD` | `"equal"` | Default position sizing |
-| `BUY_THRESHOLD` | `0.001` | Min predicted return to trigger BUY |
-| `SELL_THRESHOLD` | `-0.001` | Max predicted return to trigger SELL |
+| `BUY_THRESHOLD` | `0.005` | Min predicted return to trigger BUY |
+| `SELL_THRESHOLD` | `-0.005` | Max predicted return to trigger SELL |
 | `MAX_POSITION_PCT` | `0.20` | Max 20% of NAV in any single position |
 | `MAX_PORTFOLIO_DRAWDOWN` | `0.15` | Halt all trading at 15% drawdown |
 | `STOP_LOSS_PCT` | `0.05` | Per-position stop-loss at 5% |
