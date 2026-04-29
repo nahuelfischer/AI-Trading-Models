@@ -1,0 +1,21 @@
+# AI Portfolio Manager — dependencies
+# pip install -r requirements.txt
+
+# Data
+yfinance>=0.2.40
+pandas>=2.1.0
+numpy>=1.26.0
+
+# Model
+torch>=2.2.0
+scikit-learn>=1.4.0
+
+# Anthropic (sentiment)
+anthropic>=0.25.0
+
+# Optional: news APIs (uncomment as needed)
+# newsapi-python>=0.2.7
+# feedparser>=6.0.11
+
+# Utilities
+tqdm>=4.66.0
