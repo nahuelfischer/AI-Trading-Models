@@ -3,3 +3,4 @@ This repo contains AI Trading Models, especially in a type of automatic portfoli
 
 ## Contents
 - portfolio_manager: Automatic Portfolio Manager which trades based on specified parameters
+- agriculture_trader: Trading Bot for agricultural commodities
