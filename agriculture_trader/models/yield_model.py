@@ -1,3 +1,11 @@
+"""
+Yield Prediction Model
+
+This model predicts corn yield based on historical weather data and trends.
+Uses an ensemble of XGBoost regressors to predict yield anomalies (deviation from trend) and then adds the expected trend back to get final yield predictions.
+Plots feature importance to understand which weather factors are most influential in yield predictions.
+"""
+
 from logging import critical
 import os
 import sys
