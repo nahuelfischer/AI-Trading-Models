@@ -7,6 +7,7 @@ Processes weather data CSVs and aggregates them into monthly features for analys
 - Aggregates data across stations
 - Generates features for growing and critical periods
 """
+
 import pandas as pd
 import numpy as np
 import glob
