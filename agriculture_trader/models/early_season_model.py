@@ -1,3 +1,18 @@
+"""
+Early-season yield prediction model.
+
+This model focuses on making early predictions based on weather data from the growing season.
+- Uses historical yield data to model the long-term trend and detrend yields to focus on anomalies.
+- Trains separate XGBoost regression models for different stages of the growing season (April to September).
+- Each model uses features from the months leading up to and including its stage (e.g., April model uses April data, May model uses April+May data, etc.).
+- Provides a live prediction function that:
+    - Collects recent weather data from the WeatherCollector.
+    - Builds features based on the available monthly data for the current stage.
+    - Predicts yield using the appropriate stage model and adds back the long-term trend.
+    - Tracks prediction history and revisions over time, allowing for updates as new weather data comes in.
+    - Includes a function to plot feature importance for each stage model, helping to identify which weather factors are most influential at different points in the season.
+"""
+
 from datetime import datetime
 import os
 import sys
