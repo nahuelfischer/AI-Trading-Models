@@ -1,3 +1,12 @@
+"""
+Weather Pipeline for Corn Belt Data.
+
+Processes weather data CSVs and aggregates them into monthly features for analysis.
+- Loads temperature and precipitation data from CSV files
+- Handles missing values and special markers
+- Aggregates data across stations
+- Generates features for growing and critical periods
+"""
 import pandas as pd
 import numpy as np
 import glob
