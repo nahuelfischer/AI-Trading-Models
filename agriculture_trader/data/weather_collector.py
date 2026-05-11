@@ -1,3 +1,16 @@
+"""
+Weather Collector for Weather Data in the Corn Belt.
+
+Fetches daily temperature and precipitation data from Open-Meteo API for key stations in the Corn Belt region.
+- Stations: Des Moines, Indianapolis, Kearney, Aberdeen, St. Louis, Rochester
+- Data: Daily mean temperature (°F) and total precipitation (inches)
+Features:
+- Fetches recent past data (last 7 days) to ensure continuity
+- Merges new data with existing manual entries, prioritizing manual data in case of duplicates
+- Cleans data by removing impossible values and filling missing temperatures
+- Saves updated data to CSV files for each station
+- Provides helper functions to convert daily data to monthly aggregates and to combine data across stations
+"""
 import requests
 import pandas as pd
 import os
